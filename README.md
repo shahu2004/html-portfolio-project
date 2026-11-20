@@ -15,6 +15,7 @@ A responsive, editorial-inspired portfolio for **Shahu Kumbhar**, focused on Jav
 - Internship experience
 - Selected projects with source links
 - Education
+- Certifications
 - Contact links
 
 ## Run locally
