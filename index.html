@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d10">
-  <meta name="description" content="Shahu Kumbhar — Java Full Stack Developer building web applications with Java, Spring Boot, React and MySQL.">
-  <meta property="og:title" content="Shahu Kumbhar — Java Full Stack Developer">
-  <meta property="og:description" content="A portfolio of selected projects, skills and experience in Java full-stack development.">
+  <meta name="description" content="Shahu Shivaji Kumbhar — Java Full Stack Developer. Explore Java, Spring Boot and React projects, experience, education and certifications.">
+  <meta property="og:title" content="Shahu Shivaji Kumbhar | Java Full Stack Developer">
+  <meta property="og:description" content="Java Full Stack Developer portfolio — projects, skills, experience and certificates.">
   <meta property="og:type" content="website">
-  <title>Shahu Kumbhar — Java Full Stack Developer</title>
+  <title>Shahu Shivaji Kumbhar | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
 </head>
@@ -16,22 +19,19 @@
   <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
 
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Shahu Kumbhar, home">
-      <span class="brand-mark">SK</span>
-      <span class="brand-name">SHAHU<span class="brand-dot">.</span></span>
+    <a class="brand" href="#home" aria-label="Shahu Kumbhar home">
+      <span class="brand-mark">SK</span><span>SHAHU<span class="brand-dot">.</span></span>
     </a>
-
     <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#work">Projects</a>
-      <a href="#education">Education</a>
-      <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -39,201 +39,170 @@
     <section class="hero section-shell" id="home">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> JAVA FULL STACK DEVELOPER <span class="eyebrow-divider">/</span> PUNE, INDIA</p>
-        <h1>Turning ideas into<br><em>useful software.</em></h1>
+        <h1>Building useful<br><em>software, end to end.</em></h1>
         <p class="hero-description">
-          I'm Shahu Kumbhar. I build web applications with Java, Spring Boot,
-          React and relational databases — with a focus on clean APIs and
-          practical user experiences.
+          I'm Shahu Shivaji Kumbhar, a 2026 Computer Science and Engineering graduate.
+          I build full-stack applications with Java, Spring Boot, React and MySQL,
+          with a focus on secure APIs, maintainable code and practical user experiences.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-          <a class="button button-quiet" href="mailto:shahuk1042004@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+          <a class="button button-quiet" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/82c87812-95af-4781-8058-4e0510817f26.pdf" target="_blank" rel="noopener noreferrer">Download résumé <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-meta">
           <span><span class="meta-line"></span> Open to Java developer opportunities</span>
-          <span>Computer Science &amp; Engineering</span>
+          <span>B.Tech CSE · 2026 · CGPA 7.71/10</span>
         </div>
       </div>
 
-      <div class="hero-art" aria-label="A code-inspired profile card">
-        <div class="art-glow"></div>
-        <div class="code-card">
-          <div class="code-card-top">
-            <span class="window-dots"><i></i><i></i><i></i></span>
-            <span>developer.java</span>
-            <span class="code-card-status">01 / 04</span>
-          </div>
-          <div class="code-content">
-            <p class="code-comment">// A little about how I work</p>
-            <p><span class="code-purple">public class</span> <span class="code-yellow">Developer</span> {</p>
-            <p class="code-indent"><span class="code-purple">String</span> focus = <span class="code-green">"Full Stack"</span>;</p>
-            <p class="code-indent"><span class="code-purple">String</span> backend = <span class="code-green">"Java + Spring"</span>;</p>
-            <p class="code-indent"><span class="code-purple">String</span> frontend = <span class="code-green">"React"</span>;</p>
-            <p class="code-indent"><span class="code-purple">String</span> database = <span class="code-green">"MySQL"</span>;</p>
-            <p class="code-indent"><span class="code-purple">boolean</span> keepLearning = <span class="code-orange">true</span>;</p>
-            <p>}</p>
-          </div>
-          <div class="code-card-bottom">
-            <span><span class="status-dot"></span> Building with purpose</span>
-            <span>UTF-8</span>
-          </div>
+      <aside class="profile-card reveal" aria-label="Profile card">
+        <div class="profile-card-top"><span>PROFILE / 2026</span><span class="profile-status"><i></i> AVAILABLE FOR OPPORTUNITIES</span></div>
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/21806a4d-4c8c-4512-9b25-9c28856a3c6a.jpg" alt="Professional portrait of Shahu Shivaji Kumbhar" width="760" height="1074" fetchpriority="high">
         </div>
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="hero-index">SK<span> / 2026</span></div>
-      </div>
+        <div class="profile-card-name">
+          <div><h2>Shahu Kumbhar</h2><p>Java Full Stack Developer</p></div>
+          <span class="profile-initials">SK</span>
+        </div>
+        <div class="profile-facts">
+          <span><small>Based in</small><strong>Pune, India</strong></span>
+          <span><small>Core stack</small><strong>Java · Spring · React</strong></span>
+        </div>
+      </aside>
       <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
     </section>
 
-    <section class="intro-strip" aria-label="Portfolio highlights">
+    <section class="intro-strip" aria-label="Technology highlights">
       <div class="intro-strip-inner">
-        <span>JAVA</span><b>✳</b><span>SPRING BOOT</span><b>✳</b><span>REACT</span><b>✳</b><span>MYSQL</span><b>✳</b><span>REST APIS</span><b>✳</b><span>JAVA</span>
+        <span>JAVA</span><b>✳</b><span>SPRING BOOT</span><b>✳</b><span>SPRING SECURITY</span><b>✳</b><span>REACT</span><b>✳</b><span>MYSQL</span><b>✳</b><span>REST APIS</span>
       </div>
     </section>
 
     <section class="content-section section-shell" id="about">
       <div class="section-heading reveal">
-        <p class="section-number">01 — PROFILE</p>
-        <h2>Engineering with<br><em>curiosity and care.</em></h2>
+        <p class="section-number">01 — ABOUT</p>
+        <h2>Backend thinking.<br><em>Full-stack delivery.</em></h2>
       </div>
       <div class="about-grid">
         <div class="about-lead reveal">
-          <p class="large-copy">I enjoy taking a problem apart, understanding how its pieces fit together, and turning that understanding into a working application.</p>
+          <p class="large-copy">I enjoy solving practical problems and turning them into reliable applications — from database and API design to the interface people use.</p>
         </div>
         <div class="about-detail reveal">
           <p>
-            My core interests are backend development, REST API design and
-            connecting reliable services to clear, responsive interfaces.
-            I work primarily with the Java ecosystem and React, and I keep
-            strengthening my skills through hands-on projects.
+            I am a Computer Science and Engineering graduate with internship experience
+            in Java backend development and React.js. My work includes Spring Boot
+            REST services, Spring Security, Spring Data JPA, Hibernate and MySQL.
           </p>
           <p>
-            I value readable code, thoughtful problem-solving and learning
-            the reasoning behind the tools I use — not just the syntax.
+            I have built features such as search, filtering, sorting, soft delete,
+            BCrypt password hashing and role-based access control. I value readable
+            code, careful API testing and learning through hands-on development.
           </p>
-          <a class="text-link" href="https://github.com/shahu2004" target="_blank" rel="noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://github.com/shahu2004" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
         </div>
+      </div>
+      <div class="quick-facts reveal">
+        <div><strong>7.71/10</strong><span>B.Tech CGPA</span></div>
+        <div><strong>2</strong><span>Internship experiences</span></div>
+        <div><strong>Java + React</strong><span>Full-stack focus</span></div>
       </div>
     </section>
 
     <section class="content-section section-shell" id="skills">
       <div class="section-heading reveal">
-        <p class="section-number">02 — TOOLKIT</p>
+        <p class="section-number">02 — TECHNICAL TOOLKIT</p>
         <h2>Tools I use to<br><em>make things work.</em></h2>
       </div>
       <div class="skills-grid">
-        <article class="skill-group reveal">
-          <span class="skill-index">01</span>
-          <h3>Backend</h3>
-          <p>Java · Spring Boot · Spring MVC · Spring Data JPA · Hibernate · REST APIs</p>
-        </article>
-        <article class="skill-group reveal">
-          <span class="skill-index">02</span>
-          <h3>Frontend</h3>
-          <p>React · JavaScript · HTML5 · CSS3 · Bootstrap</p>
-        </article>
-        <article class="skill-group reveal">
-          <span class="skill-index">03</span>
-          <h3>Data</h3>
-          <p>MySQL · SQL Server · Relational database design</p>
-        </article>
-        <article class="skill-group reveal">
-          <span class="skill-index">04</span>
-          <h3>Tools &amp; workflow</h3>
-          <p>Git · GitHub · Maven · Postman · Docker</p>
-        </article>
+        <article class="skill-group reveal"><span class="skill-index">01</span><h3>Programming</h3><p>Java · JavaScript · SQL</p></article>
+        <article class="skill-group reveal"><span class="skill-index">02</span><h3>Backend</h3><p>Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Hibernate · JDBC · REST APIs</p></article>
+        <article class="skill-group reveal"><span class="skill-index">03</span><h3>Frontend</h3><p>React.js · HTML5 · CSS3 · Bootstrap</p></article>
+        <article class="skill-group reveal"><span class="skill-index">04</span><h3>Database &amp; Cloud</h3><p>MySQL · AWS Cloud Foundations · AWS Cloud Architecture</p></article>
+        <article class="skill-group reveal"><span class="skill-index">05</span><h3>Developer tools</h3><p>Git · GitHub · Maven · Postman · IntelliJ IDEA · Eclipse · VS Code · Docker (basic)</p></article>
+        <article class="skill-group reveal"><span class="skill-index">06</span><h3>Core concepts</h3><p>OOP · Collections · Exception Handling · Multithreading · DSA · MVC · CRUD · RBAC · Agile/Scrum</p></article>
       </div>
     </section>
 
     <section class="content-section section-shell" id="experience">
       <div class="section-heading reveal">
         <p class="section-number">03 — EXPERIENCE</p>
-        <h2>Learning by<br><em>building for real.</em></h2>
+        <h2>Learning through<br><em>real development work.</em></h2>
       </div>
-      <article class="experience-item reveal">
-        <div class="experience-date">DEC 2025 — MAY 2026</div>
-        <div class="experience-main">
-          <p class="experience-role">Full Stack Development Intern</p>
-          <h3>Paarsh Infotech Pvt. Ltd. <span>· Pune, India</span></h3>
-          <p>
-            Worked on a Bank Management System project using React for the
-            interface and Spring Boot for backend services, with REST APIs
-            and MySQL for data persistence.
-          </p>
-          <div class="tag-row"><span>React</span><span>Java</span><span>Spring Boot</span><span>REST API</span><span>MySQL</span></div>
-        </div>
-      </article>
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-date">JUN 2026 — SEP 2026</div>
+          <div class="experience-main">
+            <p class="experience-role">Java Developer Intern</p>
+            <h3>Bitlogic System <span>· Pune, India</span></h3>
+            <ul>
+              <li>Developed and maintained Java backend modules under senior developer guidance and resolved 10+ bugs.</li>
+              <li>Tested 20+ REST API endpoints with Postman and wrote SQL queries to verify data integrity.</li>
+              <li>Collaborated in an Agile/Scrum team using Git, pull requests, code reviews and sprint meetings.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="experience-item reveal">
+          <div class="experience-date">DEC 2025 — MAY 2026</div>
+          <div class="experience-main">
+            <p class="experience-role">Full-Stack Development Intern</p>
+            <h3>Paarsh Infotech Pvt. Ltd. <span>· Pune, India</span></h3>
+            <ul>
+              <li>Built 10+ responsive React.js pages with reusable components using JavaScript, HTML5, CSS3 and Bootstrap.</li>
+              <li>Developed Java backend features applying OOP principles and implemented SQL CRUD operations integrated with the frontend.</li>
+              <li>Managed code using Git and GitHub and incorporated mentor code-review feedback.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="content-section section-shell" id="work">
+    <section class="content-section section-shell" id="projects">
       <div class="section-heading project-heading reveal">
-        <div>
-          <p class="section-number">04 — SELECTED WORK</p>
-          <h2>A few things<br><em>I've worked on.</em></h2>
-        </div>
-        <p class="section-aside">A selection of learning and development projects. Open a source repository to explore the code.</p>
+        <div><p class="section-number">04 — SELECTED PROJECTS</p><h2>Built, tested<br><em>and improved.</em></h2></div>
+        <p class="section-aside">Two projects from my résumé, with the problem-solving and technologies behind each one.</p>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-topline"><span>01 / FULL STACK</span><span>JAVA · REACT</span></div>
-          <div class="project-visual bank-visual" aria-hidden="true">
-            <div class="visual-window">
-              <div class="visual-window-bar"><i></i><i></i><i></i><span>bank-dashboard</span></div>
-              <div class="bank-ui">
-                <div class="bank-sidebar"><b></b><i></i><i></i><i></i><i></i></div>
-                <div class="bank-main"><small>ACCOUNT OVERVIEW</small><strong>Welcome back</strong><div class="bank-balance"></div><div class="bank-lines"><i></i><i></i><i></i></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Bank Management System</h3>
-            <p>A full-stack banking application with a React interface, Spring Boot backend, REST APIs and MySQL persistence.</p>
-            <div class="tag-row"><span>React</span><span>Spring Boot</span><span>JPA</span><span>MySQL</span></div>
-            <div class="project-links">
-              <a href="https://github.com/shahu2004/Bnak-Mangement-Frontend" target="_blank" rel="noreferrer">Frontend repo ↗</a>
-              <a href="https://github.com/shahu2004/Bank-Mangement-Backend" target="_blank" rel="noreferrer">Backend repo ↗</a>
-            </div>
-          </div>
-        </article>
-
         <article class="project-card reveal">
-          <div class="project-topline"><span>02 / WEB APP</span><span>REACT · JAVA</span></div>
-          <div class="project-visual student-visual" aria-hidden="true">
-            <div class="student-board">
-              <div class="student-board-head"><span>STUDENT RECORDS</span><b>+ Add student</b></div>
-              <div class="student-stat"><strong>Students</strong><span>Management overview</span></div>
-              <div class="student-row"><i></i><span></span><b></b></div>
-              <div class="student-row"><i></i><span></span><b></b></div>
-              <div class="student-row"><i></i><span></span><b></b></div>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Student Management System</h3>
-            <p>A CRUD-focused application for managing student records through a React frontend and backend API.</p>
-            <div class="tag-row"><span>React</span><span>REST API</span><span>Java</span><span>SQL</span></div>
-            <div class="project-links">
-              <a href="https://github.com/shahu2004/Student-Management-System-Frontend" target="_blank" rel="noreferrer">Frontend repo ↗</a>
-              <a href="https://github.com/shahu2004/Student-Management-System-Backend" target="_blank" rel="noreferrer">Backend repo ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-topline"><span>03 / MICROSERVICES</span><span>SPRING BOOT</span></div>
           <div class="project-visual jaggery-visual" aria-hidden="true">
-            <div class="service-map">
-              <div class="service-node gateway">API Gateway</div>
-              <div class="service-branches"><i></i><i></i><i></i></div>
-              <div class="service-nodes"><span>Auth</span><span>Discovery</span><span>Product</span></div>
-            </div>
+            <div class="project-visual-label">01 / JAVA BACKEND</div>
+            <div class="jaggery-mark"><span>J</span><div><b>Jaggery</b><small>APPLICATION BACKEND</small></div></div>
+            <div class="feature-pills"><span>SEARCH</span><span>FILTER</span><span>SORT</span><span>SOFT DELETE</span></div>
           </div>
           <div class="project-body">
-            <h3>Jaggery Marketplace</h3>
-            <p>A marketplace project organised around Spring Boot services, including authentication, service discovery and product management.</p>
-            <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>Microservices</span><span>REST</span></div>
+            <p class="project-kicker">JAVA · SPRING BOOT · MYSQL</p>
+            <h3>Jaggery Application</h3>
+            <p>Developed a Spring Boot backend with MySQL for a jaggery application. Built features incrementally and used regular Git commits to manage the development process.</p>
+            <ul class="project-points">
+              <li>Implemented search, filtering and sorting to locate and order records by different criteria.</li>
+              <li>Added soft delete so records are marked inactive instead of being permanently removed.</li>
+            </ul>
+            <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Git</span></div>
+            <div class="project-links"><a href="https://github.com/shahu2004/jaggery-app" target="_blank" rel="noopener noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual auth-visual" aria-hidden="true">
+            <div class="project-visual-label">02 / FULL STACK</div>
+            <div class="auth-window">
+              <div class="auth-window-bar"><i></i><i></i><i></i><span>secure-auth</span></div>
+              <div class="auth-window-body"><div class="auth-shield">✓</div><b>Welcome back</b><small>Secure sign in</small><span></span><span></span><em>Sign in</em></div>
+            </div>
+            <div class="auth-stamp">BCrypt<br>+ RBAC</div>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">SPRING SECURITY · REACT · MYSQL</p>
+            <h3>Authentication Application</h3>
+            <p>A full-stack registration and login application with a React frontend and Spring Boot REST backend, using Spring Data JPA and MySQL for account persistence.</p>
+            <ul class="project-points">
+              <li>Implemented BCrypt password hashing and user/admin role-based access control.</li>
+              <li>Applied the Controller–Service–Repository pattern, Dockerized the backend and tested REST APIs using Postman.</li>
+            </ul>
+            <div class="tag-row"><span>Spring Boot</span><span>Spring Security</span><span>React.js</span><span>JPA</span><span>MySQL</span><span>Docker</span></div>
             <div class="project-links">
-              <a href="https://github.com/shahu2004/jaggery-app" target="_blank" rel="noreferrer">Source repository ↗</a>
+              <a href="https://auth-app-frontend-uca7.onrender.com" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/shahu2004/Auth-app-frontend" target="_blank" rel="noopener noreferrer">Frontend source <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
@@ -241,57 +210,57 @@
     </section>
 
     <section class="content-section section-shell" id="education">
-      <div class="section-heading reveal">
-        <p class="section-number">05 — EDUCATION</p>
-        <h2>The foundation<br><em>behind the work.</em></h2>
-      </div>
+      <div class="section-heading reveal"><p class="section-number">05 — EDUCATION</p><h2>The foundation<br><em>behind the work.</em></h2></div>
       <div class="education-list">
-        <article class="education-item reveal">
-          <span class="education-period">2022 — 2026</span>
-          <div><h3>B.Tech — Computer Science &amp; Engineering</h3><p>Sharad Institute of Technology College of Engineering, Ichalkaranji</p><p class="education-note">CGPA: 7.71</p></div>
-        </article>
-        <article class="education-item reveal">
-          <span class="education-period">2022</span>
-          <div><h3>Higher Secondary Certificate (HSC)</h3><p>Maharashtra State Board</p><p class="education-note">86.5%</p></div>
-        </article>
-        <article class="education-item reveal">
-          <span class="education-period">2020</span>
-          <div><h3>Secondary School Certificate (SSC)</h3><p>Maharashtra State Board</p><p class="education-note">89.80%</p></div>
-        </article>
+        <article class="education-item reveal"><span class="education-period">2022 — 2026</span><div><h3>B.Tech — Computer Science and Engineering</h3><p>Sharad Institute of Technology College of Engineering, Ichalkaranji</p><p class="education-note">CGPA: 7.71/10</p></div></article>
+        <article class="education-item reveal"><span class="education-period">2022</span><div><h3>Higher Secondary Certificate (HSC)</h3><p>Innovative Public School, Borawade</p><p class="education-note">86.50%</p></div></article>
+        <article class="education-item reveal"><span class="education-period">2020</span><div><h3>Secondary School Certificate (SSC)</h3><p>P.B. Patil High School, Mudal</p><p class="education-note">89.80%</p></div></article>
       </div>
     </section>
 
     <section class="content-section section-shell" id="certifications">
-      <div class="section-heading reveal">
-        <p class="section-number">06 — CONTINUOUS LEARNING</p>
-        <h2>Learning beyond<br><em>the classroom.</em></h2>
+      <div class="section-heading reveal"><p class="section-number">06 — CERTIFICATES</p><h2>Proof of<br><em>continuous learning.</em></h2></div>
+      <div class="certificates-grid">
+        <article class="certificate-card reveal">
+          <iframe class="certificate-preview" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/b98f0e71-4900-42b3-8c07-2a5a95ddc517.pdf#toolbar=0&navpanes=0&scrollbar=0" title="CJC EdTech Full Stack Java with React.js certificate"></iframe>
+          <div class="certificate-copy"><p class="certificate-type">FULL-STACK TRAINING</p><h3>Full Stack Java with React.js</h3><p>CJC EdTech · 5-month offline training program · Certificate ID: REGJB20308</p><a class="button button-quiet certificate-download" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/b98f0e71-4900-42b3-8c07-2a5a95ddc517.pdf" target="_blank" rel="noopener noreferrer">View / Download PDF <span aria-hidden="true">↓</span></a></div>
+        </article>
+        <article class="certificate-card reveal">
+          <iframe class="certificate-preview" src="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/a6371696-5986-4408-be83-c0377345cbf9.pdf#toolbar=0&navpanes=0&scrollbar=0" title="Apna College Alpha DSA with Java certificate"></iframe>
+          <div class="certificate-copy"><p class="certificate-type">DATA STRUCTURES &amp; ALGORITHMS</p><h3>Alpha: DSA with Java</h3><p>Apna College · Successfully completed the Alpha course in DSA with Java.</p><a class="button button-quiet certificate-download" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/a6371696-5986-4408-be83-c0377345cbf9.pdf" target="_blank" rel="noopener noreferrer">View / Download PDF <span aria-hidden="true">↓</span></a></div>
+        </article>
       </div>
-      <div class="certification-list">
-        <article class="certification-item reveal"><span>01</span><div><h3>AWS Cloud Foundations</h3><p>Cloud computing fundamentals</p></div></article>
-        <article class="certification-item reveal"><span>02</span><div><h3>AWS Cloud Architecture</h3><p>Cloud architecture fundamentals</p></div></article>
-        <article class="certification-item reveal"><span>03</span><div><h3>Data Analytics — GeeksforGeeks</h3><p>Data analytics fundamentals</p></div></article>
+      <p class="certificate-note">AWS Academy Graduate — Cloud Foundations and Cloud Architecture is also listed in my résumé.</p>
+      <div class="resume-band reveal">
+        <div><p class="section-number">KEEP THE DETAILS</p><h3>Want the complete résumé?</h3><p>Download my one-page résumé with my experience, skills, education and project details.</p></div>
+        <a class="button button-primary" href="https://d2ol7oe51mr4n9.cloudfront.net/user_3J4jvefRbuY6zkw7Gp2veoDi1zW/82c87812-95af-4781-8058-4e0510817f26.pdf" target="_blank" rel="noopener noreferrer">Download résumé PDF <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
     <section class="contact-section section-shell" id="contact">
       <div class="contact-card reveal">
-        <p class="section-number">07 — CONTACT</p>
+        <p class="section-number">07 — LET'S CONNECT</p>
         <p class="contact-overline">HAVE A ROLE OR PROJECT IN MIND?</p>
         <h2>Let's build<br><em>something useful.</em></h2>
-        <p class="contact-description">I'm interested in Java developer and full-stack opportunities. Send me a note and let's start a conversation.</p>
-        <a class="button button-primary contact-button" href="mailto:shahuk1042004@gmail.com">shahuk1042004@gmail.com <span aria-hidden="true">↗</span></a>
-        <div class="contact-socials">
-          <a href="https://github.com/shahu2004" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/shahu-kumbhar-610032242/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <p class="contact-description">I'm open to Java developer and full-stack opportunities. Reach out by email or WhatsApp.</p>
+        <div class="contact-actions">
+          <a class="button button-primary contact-button" href="mailto:shahuk1042004@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="button button-whatsapp" href="https://wa.me/918767716258" target="_blank" rel="noopener noreferrer">WhatsApp · +91 87677 16258 <span aria-hidden="true">↗</span></a>
         </div>
+        <div class="contact-socials">
+          <a href="https://github.com/shahu2004" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/shahu-kumbhar-610032242/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://leetcode.com/u/shahu2004/" target="_blank" rel="noopener noreferrer">LeetCode ↗</a>
+        </div>
+        <p class="contact-email">shahuk1042004@gmail.com</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer section-shell">
-    <a class="brand footer-brand" href="#home"><span class="brand-mark">SK</span><span class="brand-name">SHAHU<span class="brand-dot">.</span></span></a>
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">SK</span><span>SHAHU<span class="brand-dot">.</span></span></a>
     <p>Designed and built by Shahu Kumbhar.</p>
-    <p>© <span id="current-year">2026</span> · Made with curiosity.</p>
+    <p>© <span id="current-year">2026</span> · Pune, India</p>
   </footer>
 </body>
 </html>
