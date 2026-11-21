@@ -57,4 +57,61 @@
   } else {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
+
+  // Download cross-origin PDF files through a CORS-enabled fetch and a Blob URL.
+  // This avoids opening Edge's built-in PDF viewer, which may be disabled by the user.
+  document.querySelectorAll("a.pdf-download").forEach((link) => {
+    link.addEventListener("click", async (event) => {
+      event.preventDefault();
+      if (link.getAttribute("aria-busy") === "true") return;
+
+      const originalLabel = link.innerHTML;
+      const filename = link.dataset.downloadFilename || "document.pdf";
+      const status = document.getElementById("pdf-download-status");
+
+      link.setAttribute("aria-busy", "true");
+      link.innerHTML = "Preparing download…";
+
+      try {
+        const response = await fetch(link.href, {
+          method: "GET",
+          mode: "cors",
+          credentials: "omit",
+          cache: "no-cache"
+        });
+        if (!response.ok) throw new Error("PDF download failed (" + response.status + ").");
+
+        const contentType = response.headers.get("content-type") || "";
+        if (!contentType.toLowerCase().includes("pdf")) {
+          throw new Error("The file returned was not a PDF document.");
+        }
+
+        const pdfBlob = await response.blob();
+        if (!pdfBlob.size) throw new Error("The PDF file is empty.");
+
+        const objectUrl = URL.createObjectURL(
+          new Blob([pdfBlob], { type: "application/pdf" })
+        );
+        const downloadLink = document.createElement("a");
+        downloadLink.href = objectUrl;
+        downloadLink.download = filename;
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        downloadLink.remove();
+        window.setTimeout(() => URL.revokeObjectURL(objectUrl), 60000);
+
+        if (status) status.textContent = filename + " download started. Check your browser downloads.";
+      } catch (error) {
+        console.error("PDF download error:", error);
+        if (status) {
+          status.textContent = "Automatic download was blocked. Right-click the PDF button and choose “Save link as…”, or allow downloads for this site in Edge.";
+        }
+      } finally {
+        link.setAttribute("aria-busy", "false");
+        link.innerHTML = originalLabel;
+      }
+    });
+  });
+
 })();
